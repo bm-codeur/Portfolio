@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e0bce;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    margin: 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover{
+    color: red;
+    border: 1px solid white;
+  }
+  #about {
+    padding: 50px 10%;
+    background-color: #f9f9f9; /* Couleur de fond légère */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Espace entre la photo et le texte */
+}
+
+.about-img img {
+    width: 300px; /* Taille de la photo */
+    border-radius: 30px; /* Coins arrondis */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+}
+img:hover{
+  border-radius: 70px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* SECTION HERO */
+
+.hero {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Texte */
+.hero-content .text h1 {
+  font-size: 28px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.hero-content .text span {
+  color: #007acc;
+  font-weight: bold;
+}
+
+/* Photo */
+.hero-content .photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #007acc;
+  overflow: hidden;
+}
+.hero-content .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* SECTION SKILLS */
+
+.skills {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skill p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.bar {
+  background-color: #eee;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 10px 0 0 10px;
+  transition: width 1s ease;
+}
+
+/* SECTION CONTACT */
+#contact {
+  max-width: auto;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#contact h2 {
+  font-size: 2em;
+  margin-bottom: 10px; 
+  text-align: center;
+}
+#contact p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+form {
+  flex-direction: column;
+  display: flex;
+}
+form label {
+  margin: 10px 0 5px;
+}
+form input , form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1em;
+  border-radius: 5px;
+  
+}
+
+/* SECTION MEDIA SCREEN */
+@media screen and (max-width:568px){
+
+  .navbar ul {
+    list-style: none;
+    display: block;
+    gap: 3px;
+    text-align: center;
+  }
+    .navbar {
+    display: block;
+    justify-content: space-evenly;
+    background: #1e0bce;
+    color: white;
+    padding: 2px 6px;
+    text-align: center;
+  }
+  .container {
+    display: block;
+    align-items: center;
+    gap: 30px; /* Espace entre la photo et le texte */
+  }
+  .hero-content{
+    display: block;
+    text-align: center;
+  }
+    .hero-content .photo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid #007acc;
+      overflow: hidden;
+  }
+
+  .hero-content .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+}
+@media screen and (min-width:569px) and (max-width:899px){
+  #contact {
+    border: 2px solid black;
+  max-width: auto;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  height: 50%;
+}
+.container {
+    display: block;
+    align-items: center;
+    gap: 50px; /* Espace entre la photo et le texte */
+}
+.about-text {
+    flex: 1;
+
+}
+
+.about-img img {
+    width: 350px; /* Taille de la photo */
+    border-radius: 30px; /* Coins arrondis */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+}
+img:hover{
+  border-radius: 90px;
+}
+}
+
